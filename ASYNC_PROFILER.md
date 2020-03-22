@@ -1,5 +1,53 @@
 # ASYNC_PROFILER
 
+https://github.com/jvm-profiling-tools/async-profiler
+
+`By default, the profiling frequency is 100Hz (every 10ms of CPU time)`
+
+#### Launch Agent 
+
+- `java -agentpath:/path/to/libasyncProfiler.so=start,file=profile.svg`
+We don't have to set `-XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints` explicitly.
+
+- `profiler.sh -d 30 -e cpu -f inlining.svg $(pgrep -f Inlining)`
+We need start an application with `-XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints` otherwise
+we could lose inlined-method's frames before the profiler got attached.
+
+```
+As of Linux 4.6, capturing kernel call stacks using perf_events from a non-root process 
+requires setting two runtime variables. You can set them using sysctl or as follows:
+
+# echo 1 > /proc/sys/kernel/perf_event_paranoid
+# echo 0 > /proc/sys/kernel/kptr_restrict
+```
+
+```
+profiler.sh list $(pgrep -f Inlining)                      
+Basic events:
+  cpu
+  alloc
+  lock
+  wall
+  itimer
+Java method calls:
+  ClassName.methodName
+Perf events:
+  page-faults
+  context-switches
+  cycles
+  instructions
+  cache-references
+  cache-misses
+  branches
+  branch-misses
+  bus-cycles
+  L1-dcache-load-misses
+  LLC-load-misses
+  dTLB-load-misses
+  mem:breakpoint
+  trace:tracepoint
+```
+
 - https://github.com/jvm-profiling-tools/async-profiler
 - Does not require `-XX:+PreserveFramePointer` (in rare cases 10% CPU penalty)
 - Does not require writing out `perf.data` and post processing with post-processing with `perf record`
