@@ -24,7 +24,7 @@ https://github.com/jvm-profiling-tools/perf-map-agent
 
 ### FramePointer
 
-![FRAME_POINTERS](FRAMEPOINTERS.md)
+[FRAME_POINTERS](FRAMEPOINTERS.md)
 
 ```
 -XX:+PreserveFramePointer 
