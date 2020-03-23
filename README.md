@@ -1,9 +1,11 @@
 # FLAMEGRAPH_PLAYGROUND
 
+https://github.com/petrbouda/async-profiler-playground
+
 ### Presentation 
 
-- Sasha Goldshtein: [GOLDSHTEIN_SLIDES.md](GOLDSHTEIN_SLIDES.pdf)
-- Andrei Pangin: [PANGIN_SLIDES.md](PANGIN_SLIDES.pdf)
+- Sasha Goldshtein: [GOLDSHTEIN_SLIDES.md](slides/GOLDSHTEIN_SLIDES.pdf)
+- Andrei Pangin: [PANGIN_SLIDES.md](slides/PANGIN_SLIDES.pdf)
 
 ### Inlining
 

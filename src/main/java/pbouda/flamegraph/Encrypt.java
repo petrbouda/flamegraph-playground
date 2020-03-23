@@ -6,6 +6,17 @@ import java.security.NoSuchAlgorithmException;
 
 public class Encrypt {
 
+    private static final String TEXT =
+            "Flamescope is a new open source performance visualization tool that uses subsecond" +
+            " offset heat maps and flame graphs to analyze periodic activity, variance, and perturbations. " +
+            "We posted this on the Netflix TechBlog, Netflix FlameScope, and the tool is on github. " +
+            "While flame graphs are well understood, subsecond offset heat maps are not " +
+            "(they are another visualization I invented a while ago). FlameScope should help adoption.";
+
+    public static String encrypt() {
+        return encrypt(TEXT);
+    }
+
     public static String encrypt(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-512");
