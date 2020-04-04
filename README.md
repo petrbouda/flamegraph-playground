@@ -87,6 +87,16 @@ jdk.Deoptimization {
 
 ## Extras - Async-Profiler 
 
+####  Java Method Profiling
+
+```
+Java Classes:
+-e java.util.Properties.getProperty
+
+Native Classes:
+-e Java_java_lang_Throwable_fillInStackTrace
+```
+
 #### Humongous Allocation
 
 ![HUMONGOUS_ALLOCATION](img/extras/humongous_allocation.png)
