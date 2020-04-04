@@ -4,6 +4,10 @@ https://github.com/jvm-profiling-tools/async-profiler
 
 `By default, the profiling frequency is 100Hz (every 10ms of CPU time)`
 
+#### Profiling Frequency
+
+By default, the profiling frequency is 100Hz (every 10ms of CPU time).
+
 #### Launch Agent 
 
 - `java -agentpath:/path/to/libasyncProfiler.so=start,file=profile.svg`
