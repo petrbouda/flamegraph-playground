@@ -2,7 +2,12 @@
 
 https://github.com/petrbouda/async-profiler-playground
 
-### Presentation 
+### Must Read
+
+https://www.amazon.com/Performance-Tools-Addison-Wesley-Professional-Computing-ebook/dp/B081ZDXNL3/ref=sr_1_1?dchild=1&keywords=bpf&qid=1584993664&sr=8-1
+- chapter 12 - Languages Java
+
+### Presentations
 
 - Sasha Goldshtein: [GOLDSHTEIN_SLIDES.md](slides/GOLDSHTEIN_SLIDES.pdf)
 - Andrei Pangin: [PANGIN_SLIDES.md](slides/PANGIN_SLIDES.pdf)
@@ -10,6 +15,10 @@ https://github.com/petrbouda/async-profiler-playground
 ### Inlining
 
 https://www.baeldung.com/jvm-method-inlining
+
+### Collecting Stack-traces
+http://jeremymanson.blogspot.com/2013/07/lightweight-asynchronous-sampling.html
+http://jeremymanson.blogspot.com/2010/07/why-many-profilers-have-serious.html
 
 ### FlameGraphs
 https://github.com/brendangregg/FlameGraph
@@ -71,6 +80,10 @@ jdk.Deoptimization {
   ]
 }
 ```
+
+## PERF_MAP_FILE
+
+![PERF_MAP_FILE](img/PERF_MAP_FILE.png)
 
 ## Extras - Async-Profiler 
 
