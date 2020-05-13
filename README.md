@@ -25,6 +25,7 @@ https://github.com/brendangregg/FlameGraph
 https://github.com/jvm-profiling-tools/async-profiler
 https://medium.com/@maheshsenni/java-performance-profiling-using-flame-graphs-e29238130375
 https://www.slideshare.net/brendangregg/java-performance-analysis-on-linux-with-flame-graphs
+https://hackernoon.com/profiling-java-applications-with-async-profiler-049s2790
 
 ### PERF
 https://perf.wiki.kernel.org/index.php/Tutorial
