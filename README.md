@@ -101,11 +101,16 @@ Native Classes:
 #### Humongous Allocation
 
 ```
+bpftrace -e "u:$JAVA_HOME/lib/server/libjvm.so:_ZN15G1CollectedHeap22humongous_obj_allocateEm { printf(\"Humongous allocation of %d bytes\n\", arg1 * 8 ); }"
+```
+```
 profiler.sh -e _ZN15G1CollectedHeap22humongous_obj_allocateEm -d 10 -f humongous.svg `pgrep -f <application>`
 ```
-![HUMONGOUS_ALLOCATION](img/extras/humongous_allocation.png)
+![HUMONGOUS_ALLOCATION](img/extras/humongous.svg)
 
 #### Exception Throwing
+
+![EXCEPTION_HANDLING](img/extras/stacktraces.svg)
 
 ![EXCEPTION_HANDLING](img/extras/exception_handling.png)
 
