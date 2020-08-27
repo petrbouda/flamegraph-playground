@@ -100,8 +100,9 @@ Native Classes:
 
 #### Humongous Allocation
 
-`profiler.sh -e _ZN15G1CollectedHeap22humongous_obj_allocateEm -d 10 -f humongous.svg \`pgrep -f <application>\``
-
+```
+profiler.sh -e _ZN15G1CollectedHeap22humongous_obj_allocateEm -d 10 -f humongous.svg `pgrep -f <application>`
+```
 ![HUMONGOUS_ALLOCATION](img/extras/humongous_allocation.png)
 
 #### Exception Throwing
