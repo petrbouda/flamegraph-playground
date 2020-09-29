@@ -88,6 +88,11 @@ jdk.Deoptimization {
 
 ## Extras - Async-Profiler 
 
+#### Wall-clock
+
+- https://github.com/jvm-profiling-tools/async-profiler/issues/69
+- https://github.com/jvm-profiling-tools/async-profiler/issues/187
+
 ####  Java Method Profiling
 
 ```
